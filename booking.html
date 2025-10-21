@@ -1,1 +1,96 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Book a Cleaning</title></head><body><h1>Booking Form</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking | Clean Choice</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    form { background:#fafafa; padding:20px; border-radius:12px; border:1px solid #eee; }
+    label { display:block; margin:12px 0 6px; font-weight:600; }
+    input, select, textarea { width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; }
+    .row { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1>Clean Choice</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Request a Cleaning</h2>
+      <p>We’ll confirm time & price by phone or text.</p>
+    </section>
+
+    <form name="Booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="Booking" />
+      <p style="display:none;">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+
+      <div class="row">
+        <p>
+          <label>Full name</label>
+          <input name="name" required />
+        </p>
+        <p>
+          <label>Phone</label>
+          <input name="phone" required />
+        </p>
+        <p>
+          <label>Email</label>
+          <input name="email" type="email" />
+        </p>
+        <p>
+          <label>City / Area</label>
+          <input name="city" />
+        </p>
+      </div>
+
+      <div class="row">
+        <p>
+          <label>Service</label>
+          <select name="service" required>
+            <option value="">Choose…</option>
+            <option>Upholstery</option>
+            <option>Carpet</option>
+            <option>Rug</option>
+            <option>Mattress</option>
+            <option>Auto interior</option>
+          </select>
+        </p>
+        <p>
+          <label>Preferred date</label>
+          <input name="date" type="date" />
+        </p>
+        <p>
+          <label>Preferred time</label>
+          <select name="time">
+            <option>Morning</option><option>Afternoon</option><option>Evening</option>
+          </select>
+        </p>
+      </div>
+
+      <p>
+        <label>Details (items, stains, pets, parking, floor, etc.)</label>
+        <textarea name="details" rows="4"></textarea>
+      </p>
+
+      <p><button class="btn" type="submit">Send request</button></p>
+      <p>Prefer to call? <a href="tel:+16783000731">+1 (678) 300-0731</a></p>
+    </form>
+  </main>
+
+  <footer class="container">
+    <small>© Clean Choice, Georgia · (678) 300-0731</small>
+  </footer>
+</body>
+</html>
