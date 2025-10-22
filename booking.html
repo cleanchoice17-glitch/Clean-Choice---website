@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Booking | Clean Choice</title>
+  <title>Booking — Clean Choice</title>
   <link rel="stylesheet" href="/assets/styles.css" />
-  <style>
-    form { background:#fafafa; padding:20px; border-radius:12px; border:1px solid #eee; }
-    label { display:block; margin:12px 0 6px; font-weight:600; }
-    input, select, textarea { width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; }
-    .row { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
-  </style>
+  <link rel="canonical" href="https://clean-choice.netlify.app/booking.html">
+  <meta name="description" content="Book upholstery & carpet cleaning in minutes.">
+  <meta property="og:title" content="Booking — Clean Choice">
+  <meta property="og:description" content="Book cleaning in minutes by phone or email.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://clean-choice.netlify.app/booking.html">
+  <meta property="og:image" content="https://dummyimage.com/1200x630/004aad/ffffff&text=Clean+Choice">
 </head>
 <body>
   <header class="container">
@@ -25,68 +26,11 @@
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h2>Request a Cleaning</h2>
-      <p>We’ll confirm time & price by phone or text.</p>
-    </section>
+    <h2>Book Your Cleaning</h2>
+    <p>Fastest way — call us now: <a href="tel:+16783000731">(678) 300-0731</a></p>
+    <p>Or send details by email: <a href="mailto:cleanchoice@example.com?subject=Cleaning%20booking&body=Hi!%0D%0DAddress:%0DService:%0DPreferred%20date/time:">cleanchoice@example.com</a></p>
 
-    <form name="Booking" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="Booking" />
-      <p style="display:none;">
-        <label>Don’t fill this out: <input name="bot-field" /></label>
-      </p>
-
-      <div class="row">
-        <p>
-          <label>Full name</label>
-          <input name="name" required />
-        </p>
-        <p>
-          <label>Phone</label>
-          <input name="phone" required />
-        </p>
-        <p>
-          <label>Email</label>
-          <input name="email" type="email" />
-        </p>
-        <p>
-          <label>City / Area</label>
-          <input name="city" />
-        </p>
-      </div>
-
-      <div class="row">
-        <p>
-          <label>Service</label>
-          <select name="service" required>
-            <option value="">Choose…</option>
-            <option>Upholstery</option>
-            <option>Carpet</option>
-            <option>Rug</option>
-            <option>Mattress</option>
-            <option>Auto interior</option>
-          </select>
-        </p>
-        <p>
-          <label>Preferred date</label>
-          <input name="date" type="date" />
-        </p>
-        <p>
-          <label>Preferred time</label>
-          <select name="time">
-            <option>Morning</option><option>Afternoon</option><option>Evening</option>
-          </select>
-        </p>
-      </div>
-
-      <p>
-        <label>Details (items, stains, pets, parking, floor, etc.)</label>
-        <textarea name="details" rows="4"></textarea>
-      </p>
-
-      <p><button class="btn" type="submit">Send request</button></p>
-      <p>Prefer to call? <a href="tel:+16783000731">+1 (678) 300-0731</a></p>
-    </form>
+    <p class="muted">Tip: include address, rooms/items, preferred date/time.</p>
   </main>
 
   <footer class="container">
