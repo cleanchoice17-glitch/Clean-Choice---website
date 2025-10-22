@@ -4,16 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Clean Choice</title>
+
+  <!-- Root-relative CSS -->
   <link rel="stylesheet" href="/assets/styles.css" />
+
+  <!-- Canonical & SEO -->
   <link rel="canonical" href="https://clean-choice.netlify.app/contact.html">
-  <meta name="description" content="Contact Clean Choice in Greater Atlanta.">
+  <meta name="description" content="Contact Clean Choice in Greater Atlanta. Call, text, WhatsApp or use the quick message form.">
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Contact — Clean Choice">
-  <meta property="og:description" content="Call (678) 300-0731 or email us to get a quote.">
+  <meta property="og:description" content="Call (678) 300-0731, text or WhatsApp, or send a quick message via form.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://clean-choice.netlify.app/contact.html">
+  <!-- Безкоштовний плейсхолдер — нічого не треба завантажувати -->
   <meta property="og:image" content="https://dummyimage.com/1200x630/004aad/ffffff&text=Clean+Choice">
 </head>
 <body>
+  <!-- Header -->
   <header class="container">
     <h1>Clean Choice</h1>
     <nav>
@@ -29,16 +37,56 @@
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> <a href="tel:+16783000731">(678) 300-0731</a></p>
     <p><strong>Email:</strong> <a href="mailto:cleanchoice@example.com">cleanchoice@example.com</a></p>
+    <p><strong>Direct:</strong>
+      <a href="https://wa.me/16783000731?text=Hi%20Clean%20Choice!%20I%20need%20cleaning." target="_blank" rel="noopener">WhatsApp</a> ·
+      <a href="sms:+16783000731">Text message</a>
+    </p>
 
-    <h3>Service Area: Greater Atlanta</h3>
-    <div class="map">
-      <iframe
-        title="Atlanta area"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=Atlanta,GA&output=embed">
-      </iframe>
-    </div>
+    <!-- Quick Message (Netlify Forms) -->
+    <section>
+      <h3>Quick Message</h3>
+
+      <!-- ВАЖЛИВО для Netlify Forms: name, data-netlify, hidden form-name, honeypot -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="display:none;">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <label>Your name</label>
+        <input type="text" name="name" placeholder="John Doe" required>
+
+        <label>Your email</label>
+        <input type="email" name="email" placeholder="john@example.com" required>
+
+        <label>Phone (optional)</label>
+        <input type="tel" name="phone" placeholder="+1 (678) 300-0731">
+
+        <label>Message</label>
+        <textarea name="message" rows="4" placeholder="What would you like to clean?" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <p class="muted" style="margin-top:8px;">Prefer direct? Message us via
+        <a href="https://wa.me/16783000731?text=Hi%20Clean%20Choice!%20I%20need%20cleaning." target="_blank" rel="noopener">WhatsApp</a>,
+        <a href="sms:+16783000731">SMS</a> or
+        <a href="mailto:cleanchoice@example.com">Email</a>.
+      </p>
+    </section>
+
+    <!-- Map -->
+    <section style="margin-top:32px;">
+      <h3>Service Area: Greater Atlanta</h3>
+      <div class="map">
+        <iframe
+          title="Atlanta area"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Atlanta,GA&output=embed">
+        </iframe>
+      </div>
+    </section>
   </main>
 
   <footer class="container">
