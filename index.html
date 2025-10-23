@@ -1,69 +1,65 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clean Choice — Upholstery & Carpet Cleaning</title>
+  <!-- HEAD (див. секцію 4) -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clean Choice — Upholstery & Carpet Cleaning</title>
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png" />
+    <meta name="theme-color" content="#173E63" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <meta name="description" content="Professional upholstery, carpet and rug cleaning. Eco-friendly, fast drying, odor removal." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Clean Choice — Upholstery & Carpet Cleaning" />
+    <meta property="og:description" content="Eco-friendly solutions · Fast drying · Odor removal" />
+    <meta property="og:image" content="https://images.unsplash.it/photo-1505691723518-36a5ac3b2f36?w=1200&h=630&fit=crop" />
+    <meta property="og:url" content="https://clean-choice.netlify.app/">
+  </head>
 
-  <!-- OG: плейсхолдер 1200x630 -->
-  <meta property="og:title" content="Clean Choice — Upholstery & Carpet Cleaning">
-  <meta property="og:description" content="Eco-friendly solutions · Fast drying · Odor removal">
-  <meta property="og:image" content="https://images.unsplash.it/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&h=630&q=70">
-  <meta property="og:type" content="website">
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="/">
+          <img class="brand__logo" src="/assets/images/logo.jpg" alt="Clean Choice logo" width="44" height="44" />
+          <span class="brand__name">Clean Choice</span>
+        </a>
+        <nav class="main-nav">
+          <a href="/">Home</a><a href="/services">Services</a><a href="/pricing">Pricing</a>
+          <a href="/booking">Booking</a><a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <link rel="stylesheet" href="/assets/styles.css" />
-</head>
-<body>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>Professional Upholstery, Carpet &amp; Rug Cleaning</h1>
+        <p class="lead">Eco-friendly solutions · Fast drying · Odor removal</p>
+        <a class="btn" href="/booking">Book now</a>
+      </div>
+    </section>
 
-  <!-- Шапка з логотипом -->
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="/">
-        <!-- Варіант 1: SVG логотип -->
-        <img src="/assets/images/logo.svg" alt="Clean Choice"> 
-        <!-- Варіант 2 (текстовий, якщо поки без лого):
-        Clean <span class="brand-accent">Choice</span> -->
-      </a>
-      <nav class="menu">
-        <a class="is-active" href="/">Home</a>
-        <a href="/services.html">Services</a>
-        <a href="/pricing.html">Pricing</a>
-        <a href="/booking.html">Booking</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero hero-home">
-    <div class="container">
-      <h1>Professional Upholstery, Carpet & Rug Cleaning</h1>
-      <p class="lead">Eco-friendly solutions · Fast drying · Odor removal</p>
-      <a class="btn btn-primary btn-lg" href="/booking.html">Book now</a>
-    </div>
-  </section>
-
-  <main class="container section">
-    <div class="grid-cards">
+    <!-- CARDS -->
+    <section class="container cards">
       <article class="card">
-        <h3>Sofas & Chairs</h3>
+        <h3>Sofas &amp; Chairs</h3>
         <p>Deep hot-water extraction and stain treatment.</p>
       </article>
       <article class="card">
-        <h3>Carpet & Stairs</h3>
+        <h3>Carpet &amp; Stairs</h3>
         <p>High-power equipment for traffic areas and spots.</p>
       </article>
       <article class="card">
-        <h3>Mattress & Rugs</h3>
+        <h3>Mattress &amp; Rugs</h3>
         <p>Sanitizing, deodorizing, pet odor removal.</p>
       </article>
-    </div>
-  </main>
+    </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© Clean Choice, Georgia · (678) 300-0731</small>
-    </div>
-  </footer>
-</body>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">© Clean Choice, Georgia · (678) 300-0731</div>
+    </footer>
+  </body>
 </html>
-
