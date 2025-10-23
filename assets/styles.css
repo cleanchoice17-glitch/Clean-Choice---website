@@ -45,10 +45,10 @@ img{max-width:100%; height:auto; display:block}
 }
 .header-row{
   display:flex; align-items:center; gap:24px;
-  min-height:76px;
+  min-height:92px;
 }
 .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:#fff}
-.brand__logo{display:block; width:44px; height:44px; object-fit:contain; border-radius:8px; background:#fff;}
+.brand__logo{display:block; width:50px; height:50px; object-fit:contain; border-radius:12px; background:#fff;}
 .brand__name{font-weight:800; font-size:28px; letter-spacing:.3px}
 
 /* NAV */
