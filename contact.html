@@ -4,48 +4,63 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Clean Choice</title>
-  <meta name="description" content="Contact Clean Choice: phone, email, WhatsApp or a quick form. We reply fast." />
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">Clean Choice</a>
-      <nav class="nav">
+    <div class="container nav">
+      <a class="brand" href="/"><img src="/assets/images/logo.svg" alt="Clean Choice"></a>
+      <nav class="menu">
         <a href="/">Home</a>
-        <a href="/services">Services</a>
-        <a href="/pricing">Pricing</a>
-        <a href="/booking">Booking</a>
-        <a class="active" href="/contact">Contact</a>
+        <a href="/services.html">Services</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/booking.html">Booking</a>
+        <a class="is-active" href="/contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h1>Contact Us</h1>
-    <p><strong>Phone:</strong> <a href="tel:+16783000731">(678) 300-0731</a><br>
-       <strong>Email:</strong> <a href="mailto:cleanchioce@example.com">cleanchioce@example.com</a><br>
-       <strong>Direct:</strong> <a href="https://wa.me/16783000731?text=Hi%20Clean%20Choice!" target="_blank" rel="noopener">WhatsApp</a> · <a href="sms:+16783000731">Text message</a>
-    </p>
+  <section class="hero hero-sub">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p class="lead">We typically reply within 15–30 minutes.</p>
+    </div>
+  </section>
 
-    <h2>Quick Message</h2>
-    <!-- Netlify Form -->
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
-      <input type="hidden" name="form-name" value="contact" />
-      <p style="display:none;"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+  <main class="container section">
+    <div class="grid-cards">
+      <article class="card">
+        <h3>Direct</h3>
+        <p>Phone: <a href="tel:+16783000731">(678) 300-0731</a></p>
+        <p>Email: <a href="mailto:cleanchoice@example.com">cleanchoice@example.com</a></p>
+        <p>Message: <a href="https://wa.me/16783000731" target="_blank" rel="noopener">WhatsApp</a> ·
+           <a href="sms:+16783000731" target="_blank" rel="noopener">SMS</a></p>
+      </article>
 
-      <input type="text"   name="name"    placeholder="Your name" required>
-      <input type="email"  name="email"   placeholder="Your email" required>
-      <input type="tel"    name="phone"   placeholder="Phone (optional)">
-      <textarea            name="message" placeholder="What would you like to clean?" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-
-    <p class="muted">Prefer direct? Message us via <a href="https://wa.me/16783000731?text=Hi%20Clean%20Choice!" target="_blank" rel="noopener">WhatsApp</a>, <a href="sms:+16783000731">SMS</a> or <a href="mailto:cleanchioce@example.com">Email</a>.</p>
+      <article class="form">
+        <h3 style="margin-top:0">Quick message</h3>
+        <!-- Netlify form -->
+        <form name="contact" method="POST" data-netlify="true">
+          <!-- обов'язково: form-name -->
+          <input type="hidden" name="form-name" value="contact" />
+          <div style="display:grid; gap:12px">
+            <input class="input" type="text"   name="name"  placeholder="Your name" required>
+            <input class="input" type="email"  name="email" placeholder="Your email" required>
+            <input class="input" type="tel"    name="phone" placeholder="Your phone (optional)">
+            <textarea class="textarea" name="message" placeholder="How can we help?" required></textarea>
+            <button class="btn btn-primary" type="submit">Send</button>
+          </div>
+        </form>
+        <p style="margin:10px 0 0; color:var(--muted)">Prefer chat? Message us via
+          <a href="https://wa.me/16783000731" target="_blank" rel="noopener">WhatsApp</a> or
+          <a href="sms:+16783000731" target="_blank" rel="noopener">SMS</a>.
+        </p>
+      </article>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container"><small>© Clean Choice, Georgia · (678) 300-0731</small></div>
+    <div class="container"><small>© Clean Choice</small></div>
   </footer>
 </body>
 </html>
