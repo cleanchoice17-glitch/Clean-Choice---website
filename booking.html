@@ -5,36 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Booking — Clean Choice</title>
   <link rel="stylesheet" href="/assets/styles.css" />
-  <link rel="canonical" href="https://clean-choice.netlify.app/booking.html">
-  <meta name="description" content="Book upholstery & carpet cleaning in minutes.">
-  <meta property="og:title" content="Booking — Clean Choice">
-  <meta property="og:description" content="Book cleaning in minutes by phone or email.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://clean-choice.netlify.app/booking.html">
-  <meta property="og:image" content="https://dummyimage.com/1200x630/004aad/ffffff&text=Clean+Choice">
 </head>
 <body>
-  <header class="container">
-    <h1>Clean Choice</h1>
-    <nav>
-      <a href="/index.html">Home</a>
-      <a href="/services.html">Services</a>
-      <a href="/pricing.html">Pricing</a>
-      <a href="/booking.html">Booking</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/"><img src="/assets/images/logo.svg" alt="Clean Choice"></a>
+      <nav class="menu">
+        <a href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/pricing.html">Pricing</a>
+        <a class="is-active" href="/booking.html">Booking</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <h2>Book Your Cleaning</h2>
-    <p>Fastest way — call us now: <a href="tel:+16783000731">(678) 300-0731</a></p>
-    <p>Or send details by email: <a href="mailto:cleanchoice@example.com?subject=Cleaning%20booking&body=Hi!%0D%0DAddress:%0DService:%0DPreferred%20date/time:">cleanchoice@example.com</a></p>
+  <section class="hero hero-sub">
+    <div class="container">
+      <h1>Book Your Cleaning</h1>
+      <p class="lead">Pick a convenient time — we’ll confirm shortly.</p>
+    </div>
+  </section>
 
-    <p class="muted">Tip: include address, rooms/items, preferred date/time.</p>
+  <main class="container section">
+    <div class="card">
+      <!-- Можеш замінити на Calendly / інше -->
+      <p>Call us: <strong>(678) 300-0731</strong> or use the <a href="/contact.html">contact form</a>.</p>
+    </div>
   </main>
 
-  <footer class="container">
-    <small>© Clean Choice, Georgia · (678) 300-0731</small>
+  <footer class="site-footer">
+    <div class="container"><small>© Clean Choice</small></div>
   </footer>
 </body>
 </html>
+
