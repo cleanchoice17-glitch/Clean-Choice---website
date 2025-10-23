@@ -5,38 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Clean Choice — Upholstery & Carpet Cleaning</title>
 
-  <!-- SEO + соцмережі -->
-  <meta name="description" content="Professional upholstery, carpet & rug cleaning in Georgia. Eco-friendly, fast drying, odor removal. Call (678) 300-0731." />
-  <meta property="og:title" content="Clean Choice — Upholstery & Carpet Cleaning" />
-  <meta property="og:description" content="Professional upholstery, carpet & rug cleaning in Georgia. Eco-friendly, fast drying, odor removal." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://clean-choice.netlify.app/" />
-  <!-- Безкоштовний плейсхолдер 1200×630 (можеш замінити на власне зображення пізніше) -->
-  <meta property="og:image" content="https://images.unsplash.it/photo-1505691723518-36a5ac3b2aae?w=1200&h=630&fit=crop&auto=format" />
+  <!-- OG: плейсхолдер 1200x630 -->
+  <meta property="og:title" content="Clean Choice — Upholstery & Carpet Cleaning">
+  <meta property="og:description" content="Eco-friendly solutions · Fast drying · Odor removal">
+  <meta property="og:image" content="https://images.unsplash.it/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&h=630&q=70">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
+
+  <!-- Шапка з логотипом -->
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="/">Clean Choice</a>
-      <nav class="nav">
-        <a href="/">Home</a>
-        <a href="/services">Services</a>
-        <a href="/pricing">Pricing</a>
-        <a href="/booking">Booking</a>
-        <a href="/contact">Contact</a>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <!-- Варіант 1: SVG логотип -->
+        <img src="/assets/images/logo.svg" alt="Clean Choice"> 
+        <!-- Варіант 2 (текстовий, якщо поки без лого):
+        Clean <span class="brand-accent">Choice</span> -->
+      </a>
+      <nav class="menu">
+        <a class="is-active" href="/">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/booking.html">Booking</a>
+        <a href="/contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
+  <section class="hero hero-home">
+    <div class="container">
       <h1>Professional Upholstery, Carpet & Rug Cleaning</h1>
-      <p>Eco-friendly solutions · Fast drying · Odor removal</p>
-      <p><a class="btn" href="/booking">Book now</a></p>
-    </section>
+      <p class="lead">Eco-friendly solutions · Fast drying · Odor removal</p>
+      <a class="btn btn-primary btn-lg" href="/booking.html">Book now</a>
+    </div>
+  </section>
 
-    <section class="grid">
+  <main class="container section">
+    <div class="grid-cards">
       <article class="card">
         <h3>Sofas & Chairs</h3>
         <p>Deep hot-water extraction and stain treatment.</p>
@@ -49,7 +56,7 @@
         <h3>Mattress & Rugs</h3>
         <p>Sanitizing, deodorizing, pet odor removal.</p>
       </article>
-    </section>
+    </div>
   </main>
 
   <footer class="site-footer">
